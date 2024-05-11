@@ -227,7 +227,7 @@ class MainActivity : AppCompatActivity() {
         activityMainBinding.tvTempFarhenheit.text =
             "" + (kelvinToCelsius(body.main.temp)).times(1.8).plus(32).roundToInt()
         activityMainBinding.etGetCityName.setText(body.name)
-        activityMainBinding.etGetCityName.setText(body.name)
+//        activityMainBinding.etGetCityName.setText(body.name)
 
         updateUI(body.weather[0].id ?: 0)
     }

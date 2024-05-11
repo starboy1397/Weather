@@ -14,7 +14,7 @@ interface ApiInterface {
         @Query("APPID") api_key : String
     ):Call<ModelClass>
 
-    @GET("weather?APPID=771cea381ccf6083cf4e6a1c7f820902&units=metric")
+    @GET("weather") //?APPID=771cea381ccf6083cf4e6a1c7f820902&units=metric
     fun getCityWeatherData(
         @Query("q") cityName : String,
         @Query("APPID") api_key : String
